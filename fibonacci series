@@ -1,0 +1,18 @@
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        int count = 10; // Number of terms to generate
+        int firstTerm = 0, secondTerm = 1;
+
+        System.out.println("Fibonacci Series up to " + count + " terms:");
+
+        for (int i = 0; i < count; i++) {
+            System.out.print(firstTerm + " ");
+
+            // Compute the next term
+            int nextTerm = firstTerm + secondTerm;
+            // Update the terms for the next iteration
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
+    }
+}   
